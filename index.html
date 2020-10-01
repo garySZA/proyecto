@@ -12,7 +12,7 @@
 <!--#######################Barra de navegacion###########################-->
     <div class="nav">
         <div class="contenedor-titulo">
-            <h1 class="tittle">titulito</h1>
+            <h1 class="tittle">Titulo</h1>
         </div>
         <div class="contenedor-links">
             <a href="#">inicio</a>
@@ -22,7 +22,7 @@
             <a href="#">proyectos</a>
         </div>
         <div class="contenedor-login hamburguer">
-            <i class="fas fa-user-plus" id="user"></i>
+            <!--<i class="fas fa-user-plus" id="user"></i>-->
             <i class="fas fa-bars" id="hamburguer"></i>
         </div>      
     </div>
@@ -53,7 +53,7 @@
         
 
 <!--#######################logo###########################-->
-    <div class="logo">
+    <div class="logo headline">
         <div class="letra">
             <h2 class="titulo-emp">Lorem, ipsum dolor.</h2>
             <p>
@@ -63,7 +63,7 @@
                 <a href="#" class="log">Contactanos</a>
             </div>
         </div>
-        <div class="logo-img">
+        <div class="logo-img headline">
             <img src="./media/content_creation.svg" alt="">
         </div>
     </div>
@@ -73,42 +73,42 @@
     <div class="services" >
         
         <div class="services-content">
-            <div class="container">
+            <div class="container headline">
                 <i class="fas fa-user-shield"></i>
                 <h2>Seguridad</h2>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem magnam soluta possimus natus officia veniam dolorum dicta excepturi corporis.
                 </p>
             </div>
-            <div class="container">
+            <div class="container headline">
                 <i class="fas fa-cogs" id="tuerc"></i>
                 <h2>Soporte</h2>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem magnam soluta possimus natus officia veniam dolorum dicta excepturi corporis.
                 </p>
             </div>
-            <div class="container">
+            <div class="container headline">
                 <i class="fas fa-dollar-sign"></i>
                 <h2>Economia</h2>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem magnam soluta possimus natus officia veniam dolorum dicta excepturi corporis.
                 </p>
             </div>
-            <div class="container">
+            <div class="container headline">
                 <i class="fas fa-terminal" id="code"></i>
                 <h2>Desarrollo</h2>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem magnam soluta possimus natus officia veniam dolorum dicta excepturi corporis.
                 </p>
             </div>
-            <div class="container" id="ultimo1">
+            <div class="container headline" id="ultimo1">
                 <i class="far fa-star" id="star"></i>
                 <h2>Gestión</h2>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem magnam soluta possimus natus officia veniam dolorum dicta excepturi corporis.
                 </p>
             </div>
-            <div class="container" id="ultimo2">
+            <div class="container headline" id="ultimo2">
                 <i class="fas fa-stopwatch"></i>
                 <h2>Avances</h2>
                 <p>
@@ -121,7 +121,7 @@
 
 <!--#######################Productos###########################-->
     <div class="products">
-        <div class="products-content" id="uno">
+        <div class="products-content headline" id="uno">
             <div class="tittle-prod">
                 <h3>Landing</h3>
                 <h3>Page</h3>
@@ -174,7 +174,7 @@
                 </div>
             </div>
         </div>
-        <div class="products-content" id="dos">
+        <div class="products-content headline" id="dos">
             <div class="tittle-prod title-prod2">
                 <h3>Plataforma</h3>
                 <h3>Web</h3>
@@ -229,7 +229,7 @@
             </div>
         </div>
 
-        <div class="products-content" id="tres">
+        <div class="products-content headline" id="tres">
             <div class="tittle-prod title-prod2">
                 <h3>Plataforma</h3>
                 <h3>Web</h3>
@@ -284,7 +284,7 @@
             </div>
         </div>
 
-        <div class="products-content" id="cuatro">
+        <div class="products-content headline" id="cuatro">
             <div class="tittle-prod title-prod2">
                 <h3>Plataforma</h3>
                 <h3>Web</h3>
@@ -345,6 +345,12 @@
         <main class="main cont-main">
             <form action="" class="formulario" id="formulario">
                 <div class="formulario__grupo" id="grupo__nombre">
+                    <div class="letra-form">
+                        <h2 class="titulo-form">Lorem ipsum dolor sit amet.</h2>
+                        <p class="contenido-form">
+                            Ingresa tus datos para ponernos en contacto contigo
+                        </p>
+                    </div>
                     <label for="nombre" class="formulario__label">Nombre</label>
                     <div class="formulario__grupo-input">
                       <input
@@ -407,23 +413,25 @@
                   </div>
           
         
-                <div class="btones">
+                <div class="btones grupo-btn2">
                     <div class="formulario__grupo formulario__grupo-btn-enviar">
-                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <button type="submit" class="formulario__btn boton-envio">Enviar</button>
                         <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
                           ¡Formulario enviado exitosamente!
                         </p>
                     </div>
-                </div>
+                
             </form>
-            <div class="btones">
+            <div class="btones grupo-btn2">
                 <div class="  btnExit">
-                    <button type="submit" class=" salir btnExit2" id="salir">Cancelar</button>
+                    <button type="submit" class=" salir btnExit2 boton-salir" id="salir">Cancelar/Salir</button>
                 </div>
             </div>
+        </div>
         </main>
     </div>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./scripts.js"></script>
 </body>
 </html>

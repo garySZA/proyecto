@@ -14,7 +14,7 @@ body {
     height: 80px;
     display: flex;
     
-    justify-content: space-between;
+    justify-content: space-around;
     
     position: fixed;
     top: 0;
@@ -24,12 +24,38 @@ body {
 
 }
 
+.hamburguer {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    cursor: pointer;
+  
+    display: none;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+  }
+  
+  .hamburguer > i {
+    font-size: 25px;
+    line-height: 80px;
+
+    margin-right: -100px;
+    justify-content: center;
+    align-content: center;
+  }
+
 .tittle {
     text-align: center;
 }
 
+.contenedor-titulo {
+    align-self: center;
+}
+
 .contenedor-links {
     padding-top: 30px;
+    margin-right: 180px;
 }
 
 
@@ -41,7 +67,7 @@ body {
     text-decoration: none;
     vertical-align: center;
     padding-left: 15px;
-    transition: .3s;
+    transition: 0.3s;
     
 }
 
@@ -54,7 +80,8 @@ body {
     margin-top: 15px;
 }
 
-#user, .socials > i{
+#user, 
+.socials > i{
     font-size: 30px;
     transition: .3s;
 }
@@ -69,7 +96,7 @@ body {
     position: fixed;
     top: 38%;
     right: -70px;       
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .socials:hover {
@@ -77,12 +104,14 @@ body {
     cursor: pointer;
 }
 
-.socials > i, #user {
+.socials > i,
+ #user {
     padding: 10px;
     cursor: pointer;
 }
 
-.socials > i:hover, #user:hover {
+.socials > i:hover,
+#user:hover {
     font-size: 40px;
 }
 
@@ -106,7 +135,8 @@ body {
     border-radius: 15px;
 }
 
-.letra > h2, .letra > p {
+.letra > h2,
+.letra > p {
     padding: 10px;
 }
 
@@ -116,7 +146,7 @@ body {
     margin: 10px 10px 10px 10px;
     text-align: center;
     font-size: 20px;
-    transition:.9s;  
+    transition: 0.9s;  
 }
 
 
@@ -163,8 +193,8 @@ body {
     height: 270px;
     margin: 10px;
     background: rgba(136, 135, 137, .4);
-    opacity: .7;
-    transition: .5s;
+    opacity: 0.7;
+    transition: 0.5s;
 }
 
 .container:hover {
@@ -183,7 +213,8 @@ body {
     font-size: 12px;
 }
 
-.container > h2, p {
+.container > h2, 
+p {
     text-align: center;
 }
 
@@ -233,7 +264,8 @@ body {
 .componentes1 {
     margin-left: 30px;
 }
-.componentes1 > :first-child, .componentes > :first-child {
+.componentes1 > :first-child, 
+.componentes > :first-child {
     border-bottom: #fff solid;
 }
 .extra {
@@ -255,11 +287,14 @@ body {
     
 }
 
-.tittle-prod > :last-child, .title-comp {
+.tittle-prod > :last-child, 
+.title-comp {
     text-align: center;
 }
 
-.audio, #hamburguer, .socials2{
+.audio, 
+#hamburguer, 
+.socials2{
     display: none;
 }
 
@@ -278,7 +313,7 @@ body {
     right: -1000px;
 
     border: tomato 5px solid;
-    transition: .6s;
+    transition: 0.6s;
 }
 
 .main2 {
@@ -296,7 +331,7 @@ body {
 
     border: tomato 5px solid;
 
-    transition: .6s;
+    transition: 0.6s;
     
 }
 
@@ -339,20 +374,20 @@ body {
     height: 45px;
     line-height: 45px;
     padding: 0 40px 0 10px;
-    transition: .3s ease all;
+    transition: 0.3s ease all;
     color: tomato;
     
 }
 
 .formulario__input:hover {
-    background-color: rgba(136, 135, 137, .4);
+    background-color: rgba(136, 135, 137, 0.4);
     color: turquoise;
 }
 
 .formulario__input:focus {
     border: 3px solid #dc3545;
     outline: none;
-    box-shadow: 3px 0 30px rgba(163, 163, 163, .4);
+    box-shadow: 3px 0 30px rgba(163, 163, 163, 0.4);
 }
 
 .formulario__input-error {
@@ -403,13 +438,15 @@ body {
     margin: 0;
 }
 
-.formulario__grupo-btn-enviar, .btnExit {
+.formulario__grupo-btn-enviar, 
+.btnExit {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.formulario__btn, .btnExit2 {
+.formulario__btn, 
+.btnExit2 {
     height: 45px;
     line-height: 45px;
     width: 30%;
@@ -423,7 +460,8 @@ body {
 }
 
 
-.formulario__btn:hover, .btnExit2:hover {
+.formulario__btn:hover, 
+.btnExit2:hover {
     background-image: linear-gradient(45deg, purple, #dc3545);
     color: silver;
     box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
@@ -441,21 +479,25 @@ body {
 
 
 /*          VALIDACION         */
-.formulario__grupo-correcto .formulario__validacion-estado {
+.formulario__grupo-correcto 
+.formulario__validacion-estado {
     color: #1ed12d;
     opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__label {
+.formulario__grupo-incorrecto 
+.formulario__label {
     color: #bb2929;
   }
 
-.formulario__grupo-incorrecto .formulario__validacion-estado {
+.formulario__grupo-incorrecto 
+.formulario__validacion-estado {
     color: #bb2929;
     opacity: 1;
 }
   
-.formulario__grupo-incorrecto .formulario__input {
+.formulario__grupo-incorrecto 
+.formulario__input {
     border: 3px solid #bb2929;
 }
 
@@ -466,13 +508,19 @@ body {
         margin-bottom: 110px;
     }
     
+    .contenedor-links {
+        margin-left: 20px;
+    }
+
     .contenedor-links > a {
-        font-size: 18px;
+        
+        
+        font-size: 15px;
         transition: .3s;
     }
 
     .contenedor-links > a:hover {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .logo {
@@ -538,6 +586,186 @@ body {
         font-size: 12px;
         padding: 0;
     }
+
+    .main {
+
+        max-width: 800px;
+        width: 90%;
+        margin: auto;
+        padding: 40px;
+        padding-right: 90px;
+        
+        background-color: rgba(204, 190, 183, 0.8);
+    
+        position: fixed;
+        top: 0%;
+        right: -1000px;
+    
+        border: tomato 5px solid;
+        transition: 0.6s;
+    }
+    
+    .main2 {
+        max-width: 800px;
+        width: 500px;
+        margin: auto;
+        padding: 40px;
+        padding-right: 100px;
+    
+        background-color: rgba(204, 190, 183, 0.8);
+    
+        position: fixed;
+        top: 20%;
+        right: 20%;
+    
+        border: tomato 5px solid;
+    
+        transition: 0.6s;
+        left: 8%;
+        
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .nav {
+        display: grid;
+        grid-template-columns: 100px 400px;
+    }
+    
+    .contenedor-links {
+        width: 400px;
+        padding-right: 10px;
+    }
+    
+    .contenedor-links > a {
+        font-size: 10px;
+    }
+
+    .contenedor-links > a:hover {
+        font-size: 15px;
+    }
+
+    .logo {
+        margin-top: 80px;
+        height: 850px;
+        margin-bottom: -200px;
+    }
+
+    .letra {
+        width: 80%;
+    }
+
+    .logo-img {
+        width: 300px;
+        margin-bottom: 0fr;
+    }
+
+    .services,
+    .products {
+        width: 80%;
+    }
+
+    .services {
+        height: 1000px;
+    }
+
+    .services-content {
+       margin-left: -55px;
+        
+        display: grid;
+        grid-template-columns: 150px 150px;
+        column-span: 20px;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .container > h2 {
+        font-size: 25px;
+    }
+
+    .products {
+        height: 1400px;
+        
+
+        display: grid;
+        grid-template-columns: 150px 150px;
+        justify-content: space-evenly;
+        
+        column-span: 10px;
+
+        
+    }
+
+    .products-content {
+        width: 150px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: space-around;
+        margin: 0;
+    }
+
+    #uno {
+        padding: 0;
+        margin: 0;
+    }
+
+    .comps {
+        padding-right: 25px;
+    }
+
+    .main2 {
+        max-width: 600px;
+        width: 300px;
+        margin: auto;
+        padding: 40px;
+        padding-right: 100px;
+    
+        background-color: rgba(204, 190, 183, 0.8);
+    
+        position: fixed;
+        top: 20%;
+        right: 20%;
+    
+        border: tomato 5px solid;
+    
+        transition: 0.6s;
+        left: 8%;
+        
+    }
+
+    .grupo-btn2  {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 30px;
+    
+    }
+
+    .boton-salir, 
+    .boton-envio {
+        width: 170px;
+        margin: 10px;
+        padding: 0;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: -20px;
+    }
+
+    .formulario__mensaje {
+        width: 350px;
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .formulario__mensaje-exito {
+        right: -200px;
+        
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -546,7 +774,7 @@ body {
         position: fixed;
         background: linear-gradient(45deg, purple, #dc3545);
 
-        top: 0;
+        top: -30px;
         right: 0px;
         width: 100%;
         height: 100vh;
@@ -556,14 +784,18 @@ body {
         justify-content: space-evenly;
 
         clip-path: circle(0.0% at 100% 0);
-        transition: .5s;
+        transition: 0.5s;
+
+        margin-right: 0px;
     }
 
-    #hamburguer, .hamburguer {
+    #hamburguer, 
+    .hamburguer {
         display: block;
     }
 
-    .nav .menu-effect {
+    .nav 
+    .menu-effect {
         clip-path: circle(150% at 100% 0);
     }
 
@@ -576,15 +808,20 @@ body {
     .nav {
         width: 100%;
         left: 0px;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        
         
     }
 
-    .socials, #user {
+    .socials, 
+    #user {
         display: none;
     }
 
     .socials2 {
-        width: 399px;
+        width: 100%;
         height: 50px;
         background-image: linear-gradient(45deg, purple, #dc3545);
 
@@ -611,14 +848,6 @@ body {
         
     }
 
-    .socials2 > :first-child {
-        margin-left: 40px;
-    }
-
-    .socials2 > :last-child {
-        margin-right: 50px;
-    }
-
     .socials2 > i:hover {
         font-size: 40px;
         margin-bottom: 20px;
@@ -633,7 +862,9 @@ body {
     }
 
     .logo {
-        margin-top: 170px;
+        margin-top: 50px;
+        justify-content: center;
+        align-content: center;
     }
 
     .logo-img {
@@ -644,21 +875,23 @@ body {
         margin-bottom: -100px;
     }
 
-    .services, .products {
+    .services, 
+    .products {
         width: 250px;
         height: 1000px;
         
     }
 
     .services-content {
-        width: 280px;
+        width: 100%;
         height: 900px;
 
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 5px;
-        justify-content: center;
-        align-content: center;
+        justify-content: space-evenly;
+        
+        margin: 0;
 
     }
 
@@ -674,15 +907,16 @@ body {
         font-size: 12px;
     }
 
-    .container > #star, #code, #tuerc {
+    .container > #star, 
+    #code, 
+    #tuerc {
         margin-left: -10px;
     }
 
     .products {
         width: 250px;
         height: 1500px;
-        margin-bottom: 80px;
-
+        
         display: grid;
         grid-template-columns: repeat(2,1fr);
         
@@ -700,12 +934,14 @@ body {
         
     }
 
-    .products > #uno,.products > #tres {
+    .products > #uno,
+    .products > #tres {
        
         margin-left: 10px;
     }
 
-    .products > #dos,.products > #cuatro {
+    .products > #dos,
+    .products > #cuatro {
         margin-left: 5px;
     }
 
@@ -741,20 +977,90 @@ body {
     .title-prod2 {
         margin-bottom: 8px;
     }
-
-    .hamburguer {
-        font-size: 35px;
-        width: 20px;
-        height: 20px;
-
-        margin: 25px;
+    
+    .main2 {
+        max-width: 300px;
+        width: 150px;
+        height: 450px;
+        margin: auto;
+        padding: 40px;
+        padding-right: 100px;
+    
+        background-color: rgba(204, 190, 183, 0.8);
+    
+        position: fixed;
+        top: 15%;
+        right: 20%;
+    
+        border: tomato 5px solid;
+    
+        transition: 0.6s;
+        left: 8%;
         
     }
 
-    .hamburguer:hover {
-        cursor: pointer;
+    .grupo-btn2 {
+        width: 80%px;
+        height: 25px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
     }
 
-    
-}
+    .formulario__input {
+        height: 25px;
+    }
 
+    .boton-envio,
+    .boton-salir {
+        width: 120px;
+        margin-top: 40px;
+    }
+
+    .formulario__mensaje {
+        width: 280px;
+        height: 40px;
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        margin-left: -35px;
+    }
+
+    .formulario__mensaje > p{
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .formulario__mensaje-exito {
+        font-size: 10px;
+        
+    }
+
+    .formulario__validacion-estado  {
+        padding-top: 5px;
+        margin-bottom: -9px;
+        margin-right: -50px;
+    }
+
+    .titulo-form {
+        font-size: 20px;
+    }
+
+    .contenido-form {
+        font-size: 11px;
+        text-align: start;
+    }
+
+    .formulario__label{
+        font-size: 13px;
+    }
+
+    .letra-form {
+        width: 200px;
+    }
+}

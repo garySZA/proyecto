@@ -137,9 +137,10 @@ formulario.addEventListener("submit", (e) => {
 
 let btn = document.getElementsByClassName("caja-link")[0];
 let form = document.getElementsByClassName("cont-main")[0]
+let tam = window.outerWidth;
 
 const mostrarForm = () => {
-    form.classList.add("main2")
+    form.classList.add("main2");
 }
 
 btn.addEventListener("click",mostrarForm);
@@ -156,3 +157,5 @@ const salirForm = () => {
 }
 
 btnSalir.addEventListener("click", salirForm);
+
+ScrollReveal().reveal('.headline');
